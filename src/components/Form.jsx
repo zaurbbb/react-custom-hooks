@@ -1,5 +1,6 @@
 import React from "react";
 import { useInput } from "../hooks/useInput";
+import Title from "../ui/Title";
 
 function Form() {
   const username = useInput("");
@@ -12,6 +13,7 @@ function Form() {
 
   return (
     <form onSubmit={handleSubmit}>
+      <Title text="useInput" />
       <input
         {...username}
         type="text"

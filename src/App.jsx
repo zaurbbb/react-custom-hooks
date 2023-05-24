@@ -1,11 +1,24 @@
 import React from "react";
+
 import Form from "./components/Form";
+import Hover from "./components/Hover";
+import List from "./components/List";
+import Search from "./components/Search";
 
 function App() {
+  const styles = {
+    display: "flex",
+    flexDirection: "column",
+    gap: 20,
+  };
+
   return (
-    <div>
+    <main style={styles}>
       <Form />
-    </div>
+      <Hover />
+      <List />
+      <Search />
+    </main>
   );
 }
 
